@@ -19,6 +19,7 @@ export class ShoppingListService {
   }
 
   addIngredients(ingredients: Ingredient[]) {
+    // This will cause too many event emissions
     // for (let ingredient of ingredients) {
     //   this.addIngredient(ingredient);
     // }
