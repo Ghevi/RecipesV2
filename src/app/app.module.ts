@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -25,9 +26,9 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    DropdownDirective
+    DropdownDirective,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
